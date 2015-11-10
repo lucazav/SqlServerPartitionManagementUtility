@@ -1,0 +1,1673 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="readme_files/filelist.xml">
+<title>Executable name: ManagePartition</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PersonName"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Administrator</o:Author>
+  <o:LastAuthor>Stuart Ozer</o:LastAuthor>
+  <o:Revision>15</o:Revision>
+  <o:TotalTime>280</o:TotalTime>
+  <o:Created>2006-05-02T23:55:00Z</o:Created>
+  <o:LastSaved>2012-11-29T01:31:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1741</o:Words>
+  <o:Characters>9929</o:Characters>
+  <o:Company>Microsoft Corporation</o:Company>
+  <o:Lines>82</o:Lines>
+  <o:Paragraphs>23</o:Paragraphs>
+  <o:CharactersWithSpaces>11647</o:CharactersWithSpaces>
+  <o:Version>15.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=themeData href="readme_files/themedata.thmx">
+<link rel=colorSchemeMapping href="readme_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="371">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073786111 1 0 415 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	color:#0563C1;
+	mso-themecolor:hyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-noshow:yes;
+	mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:159807964;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1239610940 1439494928 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:\F06E;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Courier New";}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:377555455;
+	mso-list-type:simple;
+	mso-list-template-ids:2078571666;}
+@list l1:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:.25in;
+	mso-level-legacy-space:0in;
+	margin-left:0in;
+	text-indent:0in;
+	font-family:"Arial","sans-serif";}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#954F72" style='tab-interval:.5in'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;font-family:
+"Arial","sans-serif"'>Partition Management Utility v 3.0<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><st1:PersonName
+w:st="on"><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Stuart
+ Ozer</span></st1:PersonName><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>
+– Microsoft Corporation<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'><a
+href="http://sqlpartitionmgmt.codeplex.com/">http://sqlpartitionmgmt.codeplex.com/</a>
+<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'>December 2012<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .75pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none;
+border:none;mso-border-bottom-alt:solid windowtext .75pt;padding:0in;
+mso-padding-alt:0in 0in 1.0pt 0in'><span style='font-size:10.0pt;font-family:
+"Arial","sans-serif"'>Provided AS-IS, with no warranties expressed or implied<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none;
+border:none;mso-border-bottom-alt:solid windowtext .75pt;padding:0in;
+mso-padding-alt:0in 0in 1.0pt 0in'><span style='font-size:10.0pt;font-family:
+"Arial","sans-serif"'>Licensed via </span><span lang=EN style='font-size:10.0pt;
+font-family:"Arial","sans-serif";mso-ansi-language:EN'>Microsoft Public License
+(<span class=SpellE>Ms</span>-PL<span class=GramE>)<span
+style='mso-spacerun:yes'>  </span></span><a
+href="http://sqlpartitionmgmt.codeplex.com/license">http://sqlpartitionmgmt.codeplex.com/license</a>
+</span><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><u><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Executable name</span></u><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'>:<span
+style='mso-spacerun:yes'>  </span></span><b><span style='font-size:10.0pt;
+font-family:"Courier New"'>ManagePartition.exe<span style='mso-spacerun:yes'> 
+</span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif";mso-bidi-font-weight:
+bold'>This 3.0 release of the Partition Management Utility supports SQL Server 2012,
+2008R2, 2008 and 2005.<span style='mso-spacerun:yes'>  </span>New features
+include: <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif";mso-bidi-font-weight:
+bold'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-list:l0 level1 lfo2;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+style='font-size:10.0pt;font-family:Wingdings;mso-fareast-font-family:Wingdings;
+mso-bidi-font-family:Wingdings;mso-bidi-font-weight:bold'><span
+style='mso-list:Ignore'>n<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif";mso-bidi-font-weight:
+bold'>Support for <span class=SpellE>Columnstore</span> Indexes in SQL Server
+2012<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-list:l0 level1 lfo2;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+style='font-size:10.0pt;font-family:Wingdings;mso-fareast-font-family:Wingdings;
+mso-bidi-font-family:Wingdings;mso-bidi-font-weight:bold'><span
+style='mso-list:Ignore'>n<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif";mso-bidi-font-weight:
+bold'>Ability to generate TSQL Scripts for all utility operations, in addition
+to or in lieu of executing operations on the server<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-list:l0 level1 lfo2;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+style='font-size:10.0pt;font-family:Wingdings;mso-fareast-font-family:Wingdings;
+mso-bidi-font-family:Wingdings;mso-bidi-font-weight:bold'><span
+style='mso-list:Ignore'>n<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif";mso-bidi-font-weight:
+bold'>Full support for diverse global locales and their date/time
+representations<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif";mso-bidi-font-weight:
+bold'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif";mso-bidi-font-weight:
+bold'>The utility requires <b>.Net Framework version 3.5</b>, along with the
+following DLLs running on the client or server that executes the utility:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial","sans-serif";
+mso-bidi-font-weight:bold'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>SQL
+Server 2012 System CLR Types <o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:1.0in;mso-layout-grid-align:none;
+text-autospace:none'><b><span lang=EN style='font-size:10.0pt;font-family:"Arial","sans-serif";
+mso-ansi-language:EN'><a
+href="http://go.microsoft.com/fwlink/?LinkID=239643&amp;clcid=0x409">X86 <span
+class=GramE>Package</span></a></span></b><span lang=EN style='font-size:10.0pt;
+font-family:"Arial","sans-serif";mso-ansi-language:EN'>(SQLSysClrTypes.msi) or<br>
+<b><a href="http://go.microsoft.com/fwlink/?LinkID=239644&amp;clcid=0x409">X64
+Package</a></b> (SQLSysClrTypes.msi)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN style='font-family:"Arial","sans-serif";
+mso-ansi-language:EN'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>SQL
+Server 2012 Management Objects (SMO)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:1.0in'><b><span lang=EN style='font-size:
+10.0pt;font-family:"Arial","sans-serif";mso-ansi-language:EN'><a
+href="http://go.microsoft.com/fwlink/?LinkID=239658&amp;clcid=0x409">X86
+Package</a></span></b><span lang=EN style='font-size:10.0pt;font-family:"Arial","sans-serif";
+mso-ansi-language:EN'> (SharedManagementObjects.msi) or<br>
+<b><a href="http://go.microsoft.com/fwlink/?LinkID=239659&amp;clcid=0x409">X64
+Package</a></b> (SharedManagementObjects.msi)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><u><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Description:<o:p></o:p></span></u></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><u><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></span></u></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>The
+general problems addressed by this utility are:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l1 level1 lfo4;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif";mso-fareast-font-family:
+Arial'><span style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Guaranteeing
+that the staging table required to SWITCH in or out a partition is always
+created correctly ‘just in time’, with the right indexes, columns, foreign
+keys, indexed views, and partition-specific check constraint in the <span
+class=SpellE>filegroup</span> corresponding to the target partition of a
+partitioned table. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>2.<span
+style='mso-tab-count:1'>   </span>Ensuring that any partition management
+scripts stay in synch with the possible index changes, column changes or
+foreign key constraints of partition tables over time.<span
+style='mso-spacerun:yes'>  </span>Without this utility, any change to a
+partition table’s DDL would require an equivalent change in a TSQL-based
+partition management script, along with associated testing, etc.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>3.<span
+style='mso-tab-count:1'>   </span>Providing an easy mechanism to quickly empty
+a selected partition from a partitioned table with a single command-line<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>4.<span
+style='mso-tab-count:1'>   </span>Allowing fine-tuned partition data loading –
+including scenarios in which you want to create a non-indexed staging table (or
+a table with only a Clustered index) and populate it, and create necessary
+additional indexes later prior to a SWITCH in operation.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>The
+utility must be run from the command line or within an SSIS package.<span
+style='mso-spacerun:yes'>  </span>Command line parameters determine
+behavior.<span style='mso-spacerun:yes'>  </span>You may perform one of five
+different functions depending on the COMMAND parameter.<span
+style='mso-spacerun:yes'>  </span>Additional parameters define the connection
+(server, integrated security, etc); database, schema, partitioned table name,
+etc.<span style='mso-spacerun:yes'>  </span>You have the option of identifying
+a partition to manage either by explicit partition number (/<span class=GramE>p:</span>)
+OR by specifying a string representation of a value that can be input to the
+partition range function to determine a partition number (/<span class=GramE>v:</span>).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><u><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'>COMMAND Description</span></u><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'>: <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'><span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>5
+mutually-exclusive commands are supported as the /C: parameter to the
+executable.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span class=SpellE><b><span style='font-size:10.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>ClearPartition</span></b></span><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'> – Empties a
+partition of all rows by creating a staging table and calling SWITCH.<span
+style='mso-spacerun:yes'>  </span>There is the option to keep or drop the
+staging table (/K), and the name of the staging table is optional (/A)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span class=SpellE><b><span style='font-size:10.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>CreateStagingFull</span></b></span><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'> – Creates a staging
+table to match a selected partition of a partition table, including all
+indexes, <span class=SpellE>fkeys</span>, check constraint, indexed views,
+etc.<span style='mso-spacerun:yes'>  </span>This can then be populated for a
+later SWITCH in to the partition table.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span class=SpellE><b><span style='font-size:10.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>CreateStagingNoindex</span></b></span><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'> – Same as </span><span
+class=SpellE><b><span style='font-size:10.0pt;font-family:Courier;mso-bidi-font-family:
+Courier'>CreateStagingFull</span></b></span><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'> except it does not create the indexes or
+indexed views.<span style='mso-spacerun:yes'>  </span>Use this command if you
+want to populate the staging table through a bulk-load, SSIS or insert-select
+while indexes are not present – for performance reasons.<span
+style='mso-spacerun:yes'>  </span>After the table is populated, you must rerun
+the program using the </span><span class=SpellE><b><span style='font-size:10.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>IndexStaging</span></b></span><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'> command in order for
+the table to be capable of a SWITCH operation.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span class=SpellE><b><span style='font-size:10.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>CreateStagingClusteredIndex</span></b></span><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'> – Same as </span><span
+class=SpellE><b><span style='font-size:10.0pt;font-family:Courier;mso-bidi-font-family:
+Courier'>CreateStagingNoIndex</span></b></span><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'> except it also creates the Clustered Index
+on the table, deferring all <span class=SpellE>nonclustered</span> indexes and
+indexed views until the program is run again with the </span><span
+class=SpellE><b><span style='font-size:10.0pt;font-family:Courier;mso-bidi-font-family:
+Courier'>IndexStaging</span></b></span><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'> command.<span style='mso-spacerun:yes'> 
+</span>Use this command if you want to populate the staging table through a
+bulk-load, SSIS or insert-select while only the Clustered index is in place.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span class=SpellE><b><span style='font-size:10.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>IndexStaging</span></b></span><b><span
+style='font-size:10.0pt;font-family:Courier;mso-bidi-font-family:Courier'> </span></b><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'>– Builds any indexes
+or indexed views on a staging table to match those of the associated partition
+table, unless they are already present.<span style='mso-spacerun:yes'> 
+</span>Use this if you previously used the </span><span class=SpellE><b><span
+style='font-size:10.0pt;font-family:Courier;mso-bidi-font-family:Courier'>CreateStagingNoindex</span></b></span><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'> or</span><b><span
+style='font-size:10.0pt;font-family:Courier;mso-bidi-font-family:Courier'> <span
+class=SpellE>CreateStagingClusteredIndex</span> </span></b><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'>command to create the
+table.<span style='mso-spacerun:yes'>  </span>After this command the table will
+be ready for a SWITCH operation.<span style='mso-spacerun:yes'>   </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Note
+that if you are using <span class=SpellE>ColumnStore</span> indexes in SQL
+Server 2012 and switching IN to a partitioned table, you must populate your
+staging tables before the <span class=SpellE>ColumnStore</span> index is built.<span
+style='mso-spacerun:yes'>  </span>So you will first want to create the staging
+tables using the </span><span class=SpellE><b><span style='font-size:10.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>CreateStagingNoindex</span></b></span><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'> or </span><span
+class=SpellE><b><span style='font-size:10.0pt;font-family:Courier;mso-bidi-font-family:
+Courier'>CreateStagingClusteredIndex</span></b></span><span style='font-size:
+10.0pt;font-family:"Arial","sans-serif"'> command, then load the data, then
+rerun the utility using </span><span class=SpellE><b><span style='font-size:
+10.0pt;font-family:Courier;mso-bidi-font-family:Courier'>IndexStaging</span></b></span><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'> command.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><u><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Usage:<o:p></o:p></span></u></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span class=SpellE><b><span style='font-size:10.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>ManagePartition</span></b></span><b><span
+style='font-size:10.0pt;font-family:Courier;mso-bidi-font-family:Courier'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;font-family:Courier;
+mso-bidi-font-family:Courier'><span style='mso-spacerun:yes'>    </span>/<span
+class=GramE>Command<span style='font-weight:normal'>:</span></span></span></b><span
+style='font-size:10.0pt;font-family:Courier;mso-bidi-font-family:Courier'>&lt;string&gt;<span
+style='mso-spacerun:yes'>       </span>short form /C<span style='mso-tab-count:
+1'> </span>command, default = <span class=SpellE>CreateStagingFull</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Courier;
+mso-bidi-font-family:Courier'><span style='mso-spacerun:yes'>    </span>/<span
+class=GramE>Server:</span>&lt;string&gt;<span
+style='mso-spacerun:yes'>                   </span>/S<span style='mso-tab-count:
+1'> </span>Server name, default = (local)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Courier;
+mso-bidi-font-family:Courier'><span style='mso-spacerun:yes'>    </span>/<span
+class=GramE>User:</span>&lt;string&gt;<span
+style='mso-spacerun:yes'>                     </span>/U<span style='mso-tab-count:
+1'> </span>User name, default = null<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Courier;
+mso-bidi-font-family:Courier'><span style='mso-spacerun:yes'>    </span>/<span
+class=GramE>Password:</span>&lt;string&gt;<span
+style='mso-spacerun:yes'>                 </span>/P<span style='mso-tab-count:
+1'> </span>Password, default = null<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Courier;
+mso-bidi-font-family:Courier'><span style='mso-spacerun:yes'>   </span><span
+style='mso-spacerun:yes'> </span>/<span class=GramE>Integrated[</span>+|-]<span
+style='mso-spacerun:yes'>                   </span>/E<span style='mso-tab-count:
+1'> </span>Integrated Security, default +<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Courier;
+mso-bidi-font-family:Courier'><span style='mso-spacerun:yes'>    </span>/<span
+class=GramE>Database:</span>&lt;string&gt;<span
+style='mso-spacerun:yes'>                 </span>/d<span style='mso-tab-count:
+1'> </span>Database name<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Courier;
+mso-bidi-font-family:Courier'><span style='mso-spacerun:yes'>    </span>/<span
+class=GramE>Schema:</span>&lt;string&gt;<span
+style='mso-spacerun:yes'>                   </span>/s<span style='mso-tab-count:
+1'> </span>Schema name – use quotes as delimiter if needed<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Courier;
+mso-bidi-font-family:Courier'><span style='mso-spacerun:yes'>    </span>/<span
+class=SpellE><span class=GramE>PartitionTable</span></span><span class=GramE>:</span>&lt;string&gt;<span
+style='mso-spacerun:yes'>           </span>/t<span style='mso-tab-count:1'> </span>Partition
+table name - use quotes as delimiter if needed<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Courier;
+mso-bidi-font-family:Courier'><span style='mso-spacerun:yes'>    </span>/<span
+class=SpellE><span class=GramE>PartitionNumber</span></span><span class=GramE>:</span>&lt;<span
+class=SpellE>int</span>&gt;<span style='mso-spacerun:yes'>            
+</span>/p<span style='mso-tab-count:1'> </span>Partition Number<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Courier;
+mso-bidi-font-family:Courier'><span style='mso-spacerun:yes'>    </span>/<span
+class=SpellE><span class=GramE>PartitionRangeValue</span></span><span
+class=GramE>:</span>&lt;string&gt;<span style='mso-spacerun:yes'>     
+</span>/v Value string to input to partition function to specify partition
+number<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Courier;
+mso-bidi-font-family:Courier'><span style='mso-spacerun:yes'>    </span>/<span
+class=SpellE><span class=GramE>StagingTable</span></span><span class=GramE>:</span>&lt;string&gt;<span
+style='mso-spacerun:yes'>             </span>/A<span style='mso-tab-count:1'> </span>Staging
+Table Name, default = null<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Courier;mso-bidi-font-family:Courier'><span
+style='mso-spacerun:yes'>          </span>/<span class=SpellE><span
+class=GramE>ScriptOption</span></span><span class=GramE>:</span>&lt;char&gt;<span
+style='mso-spacerun:yes'>               </span>/O Scripting Option -- <span
+class=SpellE>i</span> </span><span style='font-size:10.0pt;font-family:Wingdings;
+mso-ascii-font-family:Courier;mso-hansi-font-family:Courier;mso-bidi-font-family:
+Courier;mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>à</span></span><span
+style='font-size:10.0pt;font-family:Courier;mso-bidi-font-family:Courier'>
+Include Script, o </span><span style='font-size:10.0pt;font-family:Wingdings;
+mso-ascii-font-family:Courier;mso-hansi-font-family:Courier;mso-bidi-font-family:
+Courier;mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>à</span></span><span
+style='font-size:10.0pt;font-family:Courier;mso-bidi-font-family:Courier'>
+Script Only (no execute)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Courier;mso-bidi-font-family:Courier'><span
+style='mso-spacerun:yes'>          </span>/<span class=SpellE><span
+class=GramE>ScriptFile</span></span><span class=GramE>:</span>&lt;string&gt;<span
+style='mso-spacerun:yes'>               </span>/f path and name of file for
+generated TSQL -- if excluded, script any output to <span class=SpellE>stdout</span>
+<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Courier;
+mso-bidi-font-family:Courier'><span style='mso-spacerun:yes'>    </span>/<span
+class=GramE>Keep[</span>+|-]<span
+style='mso-spacerun:yes'>                         </span>/K Keep Staging Table
+if <span class=SpellE>ClearPartition</span>, default +<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Courier;
+mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Courier;
+mso-bidi-font-family:Courier'>&lt;Command&gt; = <span class=SpellE><b>ClearPartition</b></span><b>
+| <span class=SpellE>CreateStagingFull</span> | <span class=SpellE>CreateStagingNoindex</span>
+| <span class=SpellE>CreateStagingClusteredIndex</span> | <span class=SpellE>IndexStaging</span><o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><u><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Examples:<o:p></o:p></span></u></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><u><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></span></u></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span class=SpellE><span style='font-size:10.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>ManagePartition</span></span><span
+style='font-size:10.0pt;font-family:Courier;mso-bidi-font-family:Courier'> /<span
+class=SpellE>C<span class=GramE>:CreateStagingFull</span></span> /<span
+class=SpellE>d:sample</span> /<span class=SpellE>s:dbo</span> /t:Address /p:4
+/A:myStagingTbl <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Courier;
+mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span class=SpellE><span style='font-size:10.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>ManagePartition</span></span><span
+style='font-size:10.0pt;font-family:Courier;mso-bidi-font-family:Courier'> /<span
+class=SpellE>C<span class=GramE>:CreateStagingFull</span></span> /<span
+class=SpellE>d:sample</span> /<span class=SpellE>s:dbo</span> /<span
+class=SpellE>t:Address</span> /v:2009-01-01 /<span class=SpellE>A:myStagingTbl</span>
+/<span class=SpellE>f:”c</span>:\scripts\<span class=SpellE>myscript.sql</span>”
+/<span class=SpellE>O:i</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Courier;
+mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span class=SpellE><span style='font-size:10.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>ManagePartition</span></span><span
+style='font-size:10.0pt;font-family:Courier;mso-bidi-font-family:Courier'> /<span
+class=SpellE>C<span class=GramE>:ClearPartition</span></span> /<span
+class=SpellE>d:sample</span> /<span class=SpellE>s:dbo</span> /t:Address /p:1
+/K- <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:9.0pt;font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><u><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Return
+Codes:</span></u><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'><span
+style='mso-spacerun:yes'>   </span>0 – normal exit; 1 – invalid or missing
+parameters; 2 – exception encountered<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .75pt;padding:0in 0in 31.0pt 0in;
+margin-left:.5in;margin-right:0in'>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><u><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>Note:</span></u><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'><span style='mso-spacerun:yes'>  </span>In
+the source code, the core functionality is all packaged at even finer
+granularity into the class <span class=SpellE>PartitionManager</span> (file <span
+class=SpellE>PartitionManagement.cs</span>).<span style='mso-spacerun:yes'>  
+</span>Indexes, check constraints, <span class=SpellE>fkeys</span>, etc. can
+all be cloned from a partition as separate operations by an alternative diver
+program if desired.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><u><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></span></u></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>Also, when using the option to script
+commands to a file, the utility will append to an existing file, or create it
+new if it doesn’t exist.<o:p></o:p></span></p>
+
+</div>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .75pt;padding:0in 0in 31.0pt 0in'>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><u><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></span></u></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><u><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>Discussion:</span></u><span style='font-size:
+10.0pt;font-family:"Arial","sans-serif"'><span style='mso-spacerun:yes'>   
+</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>Switching a partition in or out of a table
+requires that a staging table be created in the same <span class=SpellE>filegroup</span>
+as the partition, with identical index structures, column characteristics, and
+constraints as the partitioned table.<span style='mso-spacerun:yes'> 
+</span>When switching data in to a partitioned table, the staging table must
+also have and additional check constraint that restricts the value of the
+partitioning key to match the target partition of the partitioned table.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>ManagePartition.exe is designed to fully
+automate the creation of such a staging table when needed – such as during
+daily or monthly partition management cycles, as an alternative to maintaining
+complex TSQL scripts to generate staging tables matching partitions.<span
+style='mso-spacerun:yes'>  </span><span class=SpellE>ManagePartition</span>
+determines the structures to build based on the partitioned table structures in
+place and a data value of the partitioning key (or the partition number)
+identifying the partition of interest.<span style='mso-spacerun:yes'> 
+</span>So even if indexes or column definitions on partition tables change,
+management scripts that rely on the <span class=SpellE>ManagePartition</span>
+need not be changed because staging table structure is determined at execution
+time.<span style='mso-spacerun:yes'>   </span>Also the <span class=SpellE>ManagePartition</span>
+command can be easily integrated with parameter-driven scripts.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span class=SpellE><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'>ManagePartition</span></span><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'> offers flexibility
+in index building to match the data loading style that you prefer to use when
+loading a staging table with new data.<span style='mso-spacerun:yes'> 
+</span>You can choose to create a staging table with or without indexes, or with
+only a clustered index, as an alternative to a fully indexed table since bulk
+loads may be much faster using that technique.<span style='mso-spacerun:yes'> 
+</span>Then, when the data is loaded, you can run <span class=SpellE>ManagePartition</span>
+again invoking the command to build all indexes that were skipped initially.<span
+style='mso-spacerun:yes'>   </span>In SQL Server 2012, <span class=SpellE>Columnstore</span>
+indexes cannot be present when loading data, so supporting the decoupling of
+index build from staging table creation is critical.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>With the latest version of <span
+class=SpellE>ManagePartition</span>, you have the option to generate TSQL
+scripts for the intended operations, saving those scripts to a file, and
+running the scripts later as part of a SQLCMD job or SSIS package – rather than
+executing the operations against the server when running the tool.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>Some users prefer to disable Check
+Constraints and Foreign Key constraints during the data load, and re-enable
+them later. In some cases this may boost data load performance.<span
+style='mso-spacerun:yes'>   </span>While <span class=SpellE>ManagePartition</span>
+does not offer this option built-in, it is easy to accommodate this within your
+overall data load process:<span style='mso-spacerun:yes'>   </span>After
+creating the staging table using <span class=SpellE>ManagePartition</span>
+(with or without indexes), prior to data loading, you may disable all Check and
+Foreign Key constraints using:<br>
+</span><span style='font-size:10.0pt;font-family:"Tahoma","sans-serif"'><span
+style='mso-spacerun:yes'>      </span>ALTER TABLE&nbsp;<span class=SpellE><em><span
+style='font-family:"Tahoma","sans-serif"'>table_name</span></em></span> NOCHECK
+CONSTRAINT ALL;<br>
+Then, after completing data load operations, re-enable&nbsp;all FOREIGN KEY and
+CHECK constraints, and validate existing rows using:<br>
+<span style='mso-spacerun:yes'>      </span>ALTER TABLE <span class=SpellE><em><span
+style='font-family:"Tahoma","sans-serif"'>table_name</span></em></span> WITH
+CHECK <span class=SpellE>CHECK</span> CONSTRAINT ALL;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><u><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></span></u></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><u><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'><br>
+Enhancements from v2:<o:p></o:p></span></u></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><u><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></span></u></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>Support for SQL Server 2012 including <span
+class=SpellE>Columnstore</span> indexes<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>Support for generating TSQL scripts for the
+intended operations<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>Compatible with all locales and global date /
+numeric formats<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>Fixed problems when partitioning column name
+contained spaces or other reserved characters<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>Fixed problems with tables involving Large
+Text or Large Binary data types<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>Added support for Binary partition columns<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><u><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></span></u></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><u><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>Enhancements from v1:<o:p></o:p></span></u></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'><br>
+Support for automatically handling partition-aligned indexed views in SQL
+Server 2008<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>Handles sparse columns and filtered indexes
+in SQL Server 2008<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>Accommodates the new date and time data types
+in SQL Server 2008<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>Clustered index is always created first<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>New command “<span class=SpellE>CreateStagingClusteredIndex</span>”
+supports creating only the Clustered Index to optimize a load of presorted data<span
+class=GramE>;<span style='mso-spacerun:yes'>  </span>additional</span> indexes
+can be automatically built later using “<span class=SpellE>IndexStaging</span>”<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>Support for <span class=SpellE>Nullable</span>
+partitioning keys<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>Support for compressed tables and indexes in
+SQL Server 2008<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>Default constraints are inherited from the
+partitioned table to assist with data loading into staging tables<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>Connection Timeout eliminated<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none;border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 31.0pt 0in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>For questions or comments, email <a
+href="mailto:stuarto@microsoft.com">stuarto@microsoft.com</a>, or
+discuss/submit feedback at <a href="http://sqlpartitionmgmt.codeplex.com/">http://sqlpartitionmgmt.codeplex.com/</a>
+<o:p></o:p></span></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
