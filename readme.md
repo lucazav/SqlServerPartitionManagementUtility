@@ -8,6 +8,5 @@ I decided to fork the project because it seems that the owner of the project Stu
 
 If you want to collaborate, you're welcome! :) Just let me know and I'll add you as a contributor.
 
-<br />
 ### Authors and Contributors
 The original project creator is [Stuart Ozer](https://social.msdn.microsoft.com/Profile/stuart%20ozer%20msft)
